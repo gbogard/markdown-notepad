@@ -18,7 +18,7 @@ and navigate to http://localhost:3000
 
 # So, how does it work exactly ?
 
-Here is a list of the main third parties technologies used to built this project :
+Here is a list of the main third-party technologies used to built this project :
 
 ## Back-end
 
@@ -32,12 +32,12 @@ Here is a list of the main third parties technologies used to built this project
 * Jquery
 * wizMarkdown
 
-The app doesn't support authentification, and doesn't need any database to work properly. Every file is stored in the *data* folder.
+The app doesn't support authentification, and doesn't need any database to work properly. Every file is stored inside the *data* folder.
 
 # What now ?
 
 ## Features to come
 
-* Scrollbars syncing for better typing exprerience
+* Scrollbars syncing for a better typing exprerience
 * Better indentation
 * Printing
