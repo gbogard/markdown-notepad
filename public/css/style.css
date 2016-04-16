@@ -1,0 +1,71 @@
+html, body{
+	height: 100%;
+}
+
+.pull-left{
+	float: left;
+}
+
+.pull-right{
+	float: right;
+}
+
+.fullHeight{
+	height: 100%;
+}
+
+#preview {
+	overflow-y: scroll;
+}
+
+.clouds{
+	background-color: #ecf0f1
+}
+
+.topbar{
+	padding: 0 !important;
+	margin: 0 !important;
+	height: 8vh;
+	line-height: 8vh;
+	background-color: #27ae60;
+	color: #fff;
+	overflow: hidden;
+	padding-right: 2% !important;
+}
+
+.topbar .title{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.topbar label{
+	color: #fff !important;
+	font-style: italic;
+}
+
+.topbar .icon{
+	color: #fff !important;
+}
+
+.topbar .left-part{
+	float: left;
+	margin-right: 1%;
+	background-color: #18723d;
+	padding: 0 2% !important;
+}
+
+.content{
+	height: 92vh;
+	padding: 0 !important;
+}
+
+textarea.editorArea{
+	width: 100%;
+	height: 100%;
+	resize: none;
+	background: none;
+	border: none;
+	outline: none;
+	white-space: pre-wrap;
+}
+/*# sourceMappingURL=style.css.map */

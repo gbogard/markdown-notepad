@@ -1,0 +1,50 @@
+<div class="topbar">
+	<div class="left-part" ng-click="editor.home()">
+		<i class="ui home icon"></i>
+	</div>
+	<span class="title" ng-hide="editor.renaming">{{editor.name}}</span>&nbsp;
+	<i ng-click="editor.showRenameForm()" ng-hide="editor.renaming" class="circular write icon"></i>
+	<div class="pull-left" ng-show="editor.renaming">
+		<form class="ui form" ng-submit="editor.rename()">
+			<div class="ui inline fields">
+				<div class="field">
+				    <label>New name</label>
+				   	<input type="text" ng-model="editor.newName">
+				 </div>
+		  		<button class="ui button" type="submit">Rename</button>
+			</div>
+		</form>
+	</div>
+	<div class="pull-right">
+		<span ng-show="editor.saved">Saved	&nbsp;&nbsp;</span>
+		<a target="_self" ng-href="/notes/{{editor.name}}/download" download="{{editor.name}}.md">
+			<i  class="download icon"></i>
+		</a>
+	</div>
+</div>
+<div class="ui padded grid">
+	<div class="row content">
+		<div class="eight wide column clouds fullHeight">
+			<div class="ui basic segment fullHeight">
+				<textarea class="editorArea" ng-model="editor.text" ng-change="editor.save()"></textarea>
+			</div>
+		</div>
+		<div class="eight wide column fullHeight">
+			<div class="ui basic segment fullHeight" id="preview" ng-bind-html="editor.text | wizMarkdownFltr"></div>
+		</div>
+	</div>
+</div>
+<div class="ui modal" id="rename">
+  <div class="header">Rename</div>
+  <div class="content">
+	<div class="ui basic segment">
+		<form class="ui form" ng-submit="editor.rename()">
+			<div class="field">
+				<label>New name</label>
+				<input type="text" ng-model="editor.newName">
+			</div>
+			<button class="ui button" type="submit">Rename</button>
+		</form>
+	</div>
+  </div>
+</div>
